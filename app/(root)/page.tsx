@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { dummyInterviews } from '@/constants'
-import InterviewCard from '@/components/InterviewCard'
+import InterviewCard from '@/components/interviewCard'
 import { getCurrentUser } from '@/lib/actions/auth.action' 
 
 
