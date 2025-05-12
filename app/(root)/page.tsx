@@ -10,6 +10,7 @@ import {
   getLatestInterviews,
 } from "@/lib/actions/general.action";
 
+
 async function Home() {
   const user = await getCurrentUser();
 
