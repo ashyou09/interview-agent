@@ -79,7 +79,7 @@ export async function signIn(params: SignInParams) {
       };
 
     await setSessionCookie(idToken);
-  } catch {
+  } catch (error: any) {
     console.log("");
 
     return {
