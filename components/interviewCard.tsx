@@ -7,13 +7,17 @@ import DisplayTechIcons from './DisplayTechIcons'
 
 
 
-const interviewCard = ({interviewId , userID , role , type , techstack,
-    createdAt} : InterviewCardProps) => {
-
-        const feedback = null as Feedback | null;
-        const normalizedType = /mix/gi.test(type) ? "Mixed" : type;
-        const formattedDate  = dayjs(feedback?.createdAt || createdAt || Date.now()).format("MMM DD, YYYY");
-  return (
+const InterviewCard = ({
+  interviewId,
+  role,
+  type,
+  techstack,
+  createdAt,
+}: InterviewCardProps) => {
+  const feedback = null as Feedback | null;
+  const normalizedType = /mix/gi.test(type) ? "Mixed" : type;
+  const formattedDate  = dayjs(feedback?.createdAt || createdAt || Date.now()).format("MMM DD, YYYY");
+return (
     <div className="card-border=card-border w-[360px] max-sm:w-full min-h-96">
         <div className='card-interview'>
             <div>
@@ -39,21 +43,16 @@ const interviewCard = ({interviewId , userID , role , type , techstack,
             </p>
             </div>
             
-            <div className='flex flex-row justify-between'>
-                <DisplayTechIcons techStack={techstack}  />
+            <div className="flex flex-row justify-between">
+          <DisplayTechIcons techStack={techstack} />
 
-                <Button className= "btn-primary">
-                    <Link href = {feedback
-                       ? `/interview/${interviewId}/feedback`
-                        : `/interview/${interviewId}`
-                    }>
-                        {feedback ? "Check Feedback" : "view"}
-                    </Link>
-                </Button>
-            </div>
+          <Link href={`/interview/${interviewId}`}>
+            <Button>view</Button>
+          </Link>
         </div>
+      </div>
     </div>
-  )
-} 
+  );
+};
 
-export default interviewCard
+export default InterviewCard;

@@ -111,8 +111,6 @@ export const interviewer: CreateAssistantDTO = {
     voiceId: "sarah",
     stability: 0.4,
     similarityBoost: 0.8,
-    speed: 0.9,
-    style: 0.5,
     useSpeakerBoost: true,
   },
   model: {
@@ -121,7 +119,7 @@ export const interviewer: CreateAssistantDTO = {
     messages: [
       {
         role: "system",
-        content: `You are a professional job interviewer conducting a real-time voice interview with a candidate. Your goal is to assess their qualifications, motivation, and fit for the role.
+        content: `You are a professional job interviewer conducting a real-time voice interview with a candidate named {{username}}. Your goal is to assess their qualifications, motivation, and fit for the role.
 
 Interview Guidelines:
 Follow the structured question flow:

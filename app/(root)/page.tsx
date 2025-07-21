@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import InterviewCard from "@/components/interviewCard";
 
-import { getCurrentUser } from "@/lib/actions/auth.action";
+import { getCurrentUser, signOut } from "@/lib/actions/auth.action";
 import {
   getInterviewsByUserId,
   getLatestInterviews,
@@ -14,12 +14,12 @@ async function Home() {
   const user = await getCurrentUser();
 
   const [userInterviews, allInterview] = await Promise.all([
-    getInterviewsByUserId(user?.id!),
-    getLatestInterviews({ userId: user?.id! }),
+    getInterviewsByUserId(user?.id),
+    getLatestInterviews({ userId: user?.id }),
   ]);
 
-  const hasPastInterviews = userInterviews?.length! > 0;
-  const hasUpcomingInterviews = allInterview?.length! > 0;
+  const hasPastInterviews = userInterviews && userInterviews.length > 0;
+  const hasUpcomingInterviews = allInterview && allInterview.length > 0;
 
   return (
     <>
@@ -30,9 +30,11 @@ async function Home() {
             Practice real interview questions & get instant feedback
           </p>
 
-          <Button asChild className="btn-primary max-sm:w-full">
-            <Link href="/interview">Start an Interview</Link>
-          </Button>
+          <Link href="/interview">
+            <Button className="btn-primary max-sm:w-full">
+              Start an Interview
+            </Button>
+          </Link>
         </div>
 
         <Image

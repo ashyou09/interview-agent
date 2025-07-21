@@ -45,9 +45,21 @@ const Agent = ({
     };
 
     const onMessage = (message: Message) => {
-      if (message.type === "transcript" && message.transcriptType === "final") {
-        const newMessage = { role: message.role, content: message.transcript };
-        setMessages((prev) => [...prev, newMessage]);
+      if (message.type === "transcript") {
+        setMessages((prev) => {
+          const lastMessage = prev[prev.length - 1];
+
+          if (lastMessage?.role === message.role) {
+            let updatedMessages = [...prev];
+            updatedMessages[prev.length - 1].content = message.transcript;
+            return updatedMessages;
+          } else {
+            return [
+              ...prev,
+              { role: message.role, content: message.transcript },
+            ];
+          }
+        });
       }
     };
 
@@ -118,12 +130,7 @@ const Agent = ({
     setCallStatus(CallStatus.CONNECTING);
 
     if (type === "generate") {
-      await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
-        variableValues: {
-          username: userName,
-          userid: userId,
-        },
-      });
+      await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!);
     } else {
       let formattedQuestions = "";
       if (questions) {
@@ -135,6 +142,7 @@ const Agent = ({
       await vapi.start(interviewer, {
         variableValues: {
           questions: formattedQuestions,
+          username: userName,
         },
       });
     }
