@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📚 Interview Agent – Smart Learning Platform for Interview Preparation
+Capstone Project
+Name: Ashutosh Singh
+Enrollment No: 2401010109
+GitHub Repository: interview-agent
 
-## Getting Started
+🚀 Project Overview
+Interview Agent is a smart, AI-enhanced platform designed to help users prepare effectively for job interviews. The platform offers personalized learning experiences, realistic mock interviews, and insightful feedback to improve users’ confidence and readiness.
 
-First, run the development server:
+🎯 Project Goals & Core Features
+🎯 Primary Objective
+To build an intelligent and interactive system that assists users in preparing for interviews using modern web technologies and AI-based features.
 
-```bash
+🧩 Core Features
+✅ Comprehensive Question Bank
+Topic-wise, difficulty-leveled repository of technical and behavioral questions.
+
+✅ Mock Interview Simulation
+Interactive and intuitive interface that simulates real interview environments.
+
+✅ Personalized AI Feedback
+AI-powered suggestions and feedback tailored to users’ performance in mock interviews.
+
+✅ Progress Tracking & Analytics
+Visual dashboards for tracking user performance, strengths, and growth areas.
+
+✅ Secure User Management (Upcoming)
+Full-featured authentication system for user sign-up, login, and profile handling.
+
+🛠️ Tech Stack
+Layer	Technology
+Frontend	Next.js (React framework)
+Backend	Firebase (Firestore + Auth)
+AI (Future)	VAPI AI – Conversational & Recommendation System
+Deployment	GitHub + Vercel
+Version Control	Git
+
+🧠 Future Scope
+Integrate VAPI AI for real-time AI interview feedback and conversational practice.
+
+Add resume analyzer to tailor questions and mock interviews based on resume content.
+
+Expand database with company-specific interview questions (e.g., Google, Amazon, etc.).
+
+🧪 Getting Started (Local Setup)
+Clone the repository and run the development server:
+
+git clone https://github.com/ashyou09/interview-agent.git
+cd interview-agent
+
+npm install
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000 to view the project in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📦 Deployment
+This project is deployed via Vercel
+🔗 Live Site (update if live)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📚 Resources
+Next.js Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Firebase Documentation
 
-## Learn More
+Vercel Deployment Guide
 
-To learn more about Next.js, take a look at the following resources:
+👤 Author
+Ashutosh Singh
+📧 ashutosh.singh2024@nst.rishihood.edu.in
+🔗 GitHub Profile
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
