@@ -1,5 +1,5 @@
 # 🎙️ **Interview Agent: AI-Powered Interview Preparation Tool**
-**[📂 Code Repository](https://github.com/ashyou09/interview-agent)    |    [🚀 Live Demo](https://ai-interview-agent-1974.vercel.app/)**
+[🚀 Live Demo](https://ai-interview-agent-1974.vercel.app/)**
 
 ---
 
