@@ -1,72 +1,31 @@
-📚 Interview Agent – Smart Learning Platform for Interview Preparation
-Capstone Project
-Name: Ashutosh Singh
-Enrollment No: 2401010109
-GitHub Repository: interview-agent
+### 🎙️ **Interview Agent: AI-Powered Interview Preparation Tool**
+**[📂 Code Repository](https://github.com/ashyou09/interview-agent)    |    [🚀 Live Demo](https://ai-interview-agent-1974.vercel.app/)**
 
-🚀 Project Overview
-Interview Agent is a smart, AI-enhanced platform designed to help users prepare effectively for job interviews. The platform offers personalized learning experiences, realistic mock interviews, and insightful feedback to improve users’ confidence and readiness.
+---
 
-🎯 Project Goals & Core Features
-🎯 Primary Objective
-To build an intelligent and interactive system that assists users in preparing for interviews using modern web technologies and AI-based features.
+#### **📝 Problem & Solution**
+*   **The Problem:** Traditional interview prep is often static and generic. Job seekers rely on repetitive question lists that fail to simulate the **unpredictability** and **pressure** of a real-world technical or behavioral interview.
+*   **The Solution:** **Interview Agent** is a smart, interactive platform that bridges the gap between study and practice. By using **Generative AI**, it creates a personalized environment that adapts to a user's specific career goals, providing realistic mock simulations and instant, actionable feedback to build confidence.
 
-🧩 Core Features
-✅ Comprehensive Question Bank
-Topic-wise, difficulty-leveled repository of technical and behavioral questions.
+#### **🧠 Core Declaration**
+This platform is **centrally powered by Generative AI (Gemini API)**. Unlike legacy systems that pull from a fixed database, this tool utilizes **real-time LLM inference** to generate context-aware questions and evaluate user responses dynamically. It transforms a standard Q&A session into a high-fidelity, non-repetitive conversational experience.
 
-✅ Mock Interview Simulation
-Interactive and intuitive interface that simulates real interview environments.
+#### **🛠️ Technical Highlights**
+*   **✨ Dynamic AI Mock Simulations:** Features an intuitive interface that simulates real-world interview environments. The **Gemini API** acts as the "interviewer," generating role-specific questions and tailored follow-ups based on the user's previous answers.
+*   **📊 Visual Analytics & Feedback:** Beyond just grading, the system provides **AI-powered qualitative feedback**. A visual dashboard tracks performance trends, identifies specific "growth areas," and highlights technical strengths using real-time data.
+*   **🔒 Secure Persistence Layer:** Built with a robust **Firebase (Auth & Firestore)** integration. This ensures that every user has a secure, private profile where their full interview history, performance metrics, and progress are stored and accessible across sessions.
+*   **⚡ High-Performance Full-Stack:** Developed using **Next.js (React)** and optimized for speed. The application is deployed via **Vercel**, ensuring a seamless, low-latency experience during intensive AI-driven simulations.
 
-✅ Personalized AI Feedback
-AI-powered suggestions and feedback tailored to users’ performance in mock interviews.
+#### **💻 Technology Stack**
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | **Next.js (React)** | Robust, component-based UI and fast client-side routing. |
+| **Brain** | **Gemini API** | Real-time generative logic for questions and feedback. |
+| **Backend** | **Firebase Firestore** | NoSQL real-time database for storing interview history. |
+| **Security** | **Firebase Auth** | Secure user identity and profile management. |
+| **Deployment** | **Vercel** | Global hosting and high-availability cloud infrastructure. |
 
-✅ Progress Tracking & Analytics
-Visual dashboards for tracking user performance, strengths, and growth areas.
-
-✅ Secure User Management (Upcoming)
-Full-featured authentication system for user sign-up, login, and profile handling.
-
-🛠️ Tech Stack
-Layer	Technology
-Frontend	Next.js (React framework)
-Backend	Firebase (Firestore + Auth)
-AI (Future)	VAPI AI – Conversational & Recommendation System
-Deployment	GitHub + Vercel
-Version Control	Git
-
-🧠 Future Scope
-Integrate VAPI AI for real-time AI interview feedback and conversational practice.
-
-Add resume analyzer to tailor questions and mock interviews based on resume content.
-
-Expand database with company-specific interview questions (e.g., Google, Amazon, etc.).
-
-🧪 Getting Started (Local Setup)
-Clone the repository and run the development server:
-
-git clone https://github.com/ashyou09/interview-agent.git
-cd interview-agent
-
-npm install
-npm run dev
-# or
-yarn dev
-Visit http://localhost:3000 to view the project in your browser.
-
-📦 Deployment
-This project is deployed via Vercel
-🔗 Live Site (update if live)
-
-📚 Resources
-Next.js Documentation
-
-Firebase Documentation
-
-Vercel Deployment Guide
-
-👤 Author
-Ashutosh Singh
-📧 ashutosh.singh2024@nst.rishihood.edu.in
-🔗 GitHub Profile
-
+#### **🔮 Future Roadmap**
+*   **🎙️ Voice Integration:** Incorporating **VAPI AI** for real-time, voice-based conversational practice.
+*   **📄 Resume Intelligence:** Adding a resume analyzer to automatically tailor mock interviews based on a user's uploaded CV.
+*   **🏢 Target Tracking:** Curated question sets specifically modeled after major tech firms like Google and Amazon.
